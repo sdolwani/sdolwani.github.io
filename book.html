@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Life Counseling Clinic :: Booking</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Life Counseling Clinic, a therapy company located in Arizona with treatment for Mood, Anxiety, Psychotic, Eating, Dementia disorders. Empirical practices including CBT, EMDR, medication, and applied therapies.">
+    <link rel="stylesheet" href="CSS/Couseling.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html"> Life Counseling Clinic</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="benefits.html">Benefits </a></li>
+                <li><a href="find.html">Find Us </a></li>
+                <li><a href="about.html">About Us </a></li>
+                <li><a href="book.html">Book Now </a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2> Contact Us Today!</h2>
+            <p>Required fields are marked with an asterisk *</p>
+            <form action="https://webdevbasics.net/scripts/pacific.php" method="post">
+
+                <label for="First Name">*First Name:</label>
+                <input type="text" name="FName" id="FName" required="required"></input>
+
+                <label for="Last Name">*Last Name:</label>
+                <input type="text" name="LName" id="LName" required="required"></input>
+
+                <label for="Email">*Email:</label>
+                <input type="email" name="email" id="email" required="required"></input>
+
+                <label for="Phone Number">*Phone Number:</label>
+                <input type="phone" name="phone" id="phone" minlength="12" maxlength="12" required="required"></input>
+
+                <label for="First Session Date">*First Session:</label>
+                <input type="date" name="date" id="date" required="required"></input>
+
+                <label for="Contact Using">Preferred Contact Method: (optional)</label>
+                <select name="contact-through" id="contact-through">
+                    <option hidden selected disabled>Select one...</option>
+                    <option value="email" aria-required="true">Email</option>
+                    <option value="text">Text</option>
+                    <option value="call">Phonecall</option>
+                </select>
+
+                <label for="info">Additional Information:</label>
+                <textarea name="information" rows="8" cols="30"></textarea>
+
+                <input type="submit" name="submit" id="submit"></input>
+
+            </form>
+        </main>
+        <footer>
+            <div>
+                Life Cousneling Clinic, PLLC &copy; <br>
+                (602-402-4686) | <a href="mailto:dolwanishrrey@gmail.com">dolwanishrey@gmail.com</a>
+            </div>
+            <div>
+                <u>Mesa/Gilbert</u>: <br>
+                1234 E. Real Rd, Ste 111, Mesa, AZ 85206 <br>
+                <u>Tempe/Chandler</u>: <br>
+                4321 W. Real St, Ste 101, Tempe, AZ 85283 <br>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
